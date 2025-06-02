@@ -6,10 +6,9 @@ let maggieButton; // The Maggie button image
 let OJButton; // The OJ button image
 let trumpButton; // The Trump button image
 
-
 let numImages = 200; // Number of googly eye pairs
 let maxDistance = 20; // Maximum movement distance for the eyeball
-let imageScale = 0.4; // Smaller scale for the googly eyes
+let imageScale = 0.2; // Smaller scale for the googly eyes
 let maggieScale = 0.19; // Scale for the Maggie image
 let OJScale = 0.19; // Scale for the OJ image
 let trumpScale = 0.19; // Scale for the Trump button
@@ -216,13 +215,3 @@ function windowResized() {
   // If you wanted it to be responsive (e.g., always in the top-left corner regardless of window size),
   // you would adjust infoX and infoY based on width/height here.
 }
-
-// The checkOverlap function is commented out as it's no longer used.
-/*
-function checkOverlap(r1, r2) {
-  return !(r1.right < r2.left ||
-    r1.left > r2.right ||
-    r1.bottom < r2.top ||
-    r1.top > r2.bottom);
-}
-*/
