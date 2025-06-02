@@ -6,9 +6,9 @@ let maggieButton; // The Maggie button image
 let OJButton; // The OJ button image
 let trumpButton; // The Trump button image
 
-let numImages = 200; // Number of googly eye pairs
+let numImages = 250; // Number of googly eye pairs
 let maxDistance = 20; // Maximum movement distance for the eyeball
-let imageScale = 0.2; // Smaller scale for the googly eyes
+let imageScale = 0.25; // Smaller scale for the googly eyes
 let maggieScale = 0.19; // Scale for the Maggie image
 let OJScale = 0.19; // Scale for the OJ image
 let trumpScale = 0.19; // Scale for the Trump button
