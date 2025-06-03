@@ -74,7 +74,7 @@ function setup() {
 
   // NEW: Set static position for addImage (add.png)
   // You can adjust these coordinates as needed
-  addX = 1500; // Example position, adjust as desired
+  addX = 1200; // Example position, adjust as desired
   addY = 300; // Example position, adjust as desired
 
   // Change cursor to a pointer when it's over interactive elements
