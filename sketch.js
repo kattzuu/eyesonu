@@ -1,5 +1,7 @@
 let infoImage; // The base info image (INFO1.png)
 let infoImageHover; // The hover info image (INFO2.png)
+let addImage; // The base add image (add.png)
+let addImageHover; // The hover add image (add-eyes.png)
 let googlyEyeball; // The moving googly eyeball image
 let googlyEye; // The static googly eye image
 let maggieButton; // The Maggie button image
@@ -14,7 +16,10 @@ let maggieScale = 0.19; // Scale for the Maggie image
 let OJScale = 0.19; // Scale for the OJ image
 let trumpScale = 0.19; // Scale for the Trump button
 let infoImageScale = 0.2; // Scale for the info image (adjust as needed)
+let addImageScale = 0.2; // NEW: Scale for the add image (adjust as needed)
 let infoHoverScaleFactor = 3; // NEW: Factor to make info2.png bigger when hovered (e.g., 1.2 for 20% bigger)
+let addHoverScaleFactor = 3; // NEW: Factor to make add-eyes.png bigger when hovered
+
 
 // Define spacing between buttons
 let buttonSpacing = 200; // Adjust this value to increase or decrease spacing
@@ -24,15 +29,20 @@ let isMouseOverOJ = false;
 let isMouseOverTrump = false;
 let isMouseOverMaggie = false;
 let isMouseOverInfo = false; // State to track if mouse is over infoImage
+let isMouseOverAdd = false; // NEW: State to track if mouse is over addImage
 let scaleFactor = 0.1; // The amount the image should scale when hovered
 
 // Global variables for info image static position
 let infoX, infoY;
+// NEW: Global variables for add image static position
+let addX, addY;
 
 function preload() {
   // Load all necessary images
   infoImage = loadImage('INFO1.png');
   infoImageHover = loadImage('info2.png'); // Load the hover image
+  addImage = loadImage('add.png'); // NEW: Load the base add image
+  addImageHover = loadImage('add-eyes.png'); // NEW: Load the hover add image
   googlyEyeball = loadImage('googly-eyeball.png');
   googlyEye = loadImage('googly-eye.png');
   maggieButton = loadImage('maggie-button2.png'); // Load Maggie button image
@@ -58,9 +68,14 @@ function setup() {
   }
 
   // Set static position for infoImage (INFO1.png)
-  // Its center will be at (50, 50)
+  // Its center will be at (350, 550)
   infoX = 350;
   infoY = 550;
+
+  // NEW: Set static position for addImage (add.png)
+  // You can adjust these coordinates as needed
+  addX = 1000; // Example position, adjust as desired
+  addY = 100; // Example position, adjust as desired
 
   // Change cursor to a pointer when it's over interactive elements
   cursor(HAND);
@@ -179,12 +194,12 @@ function draw() {
     window.open('https://editor.p5js.org/katzu/full/Kde_Jdh67', '_blank');
   }
 
-  // --- ADDED: Click detection for Maggie button ---
+  // --- Click detection for Maggie button ---
   if (mouseIsPressed && mouseX > maggieLeft && mouseX < maggieRight && mouseY > maggieTop && mouseY < maggieBottom) {
     // Open the p5.js editor full-screen link in a new tab
-    window.open('https://editor.p5js.org/katzu/full/TNDR3arfe', '_blank'); 
+    window.open('https://editor.p5js.org/katzu/full/TNDR3arfe', '_blank');
   }
-  // --- END ADDED CODE ---
+
 
   // --- INFO IMAGE HOVER LOGIC ---
   // Calculate the actual dimensions and position of infoImage (INFO1.png)
@@ -204,31 +219,48 @@ function draw() {
   }
 
   // Draw infoImage (INFO1.png)
-  // This is drawn last to ensure it's above all other elements except infoImageHover
   image(infoImage, infoX, infoY, infoWidth, infoHeight);
 
   // Draw infoImageHover (INFO2.png) ONLY if mouse is over infoImage
-  // This is drawn even later than infoImage, so it appears above it
   if (isMouseOverInfo) {
     // Apply the new scale factor to make info2.png bigger
     let hoveredInfoWidth = infoWidth * infoHoverScaleFactor;
     let hoveredInfoHeight = infoHeight * infoHoverScaleFactor;
     image(infoImageHover, infoX, infoY, hoveredInfoWidth, hoveredInfoHeight);
   }
+
+  // --- NEW: ADD IMAGE HOVER LOGIC (mirroring info image logic) ---
+  // Calculate the actual dimensions and position of addImage (add.png)
+  let addWidth = addImage.width * addImageScale;
+  let addHeight = addImage.height * addImageScale;
+  let addLeft = addX - addWidth / 2;
+  let addRight = addX + addWidth / 2;
+  let addTop = addY - addHeight / 2;
+  let addBottom = addY + addHeight / 2;
+
+  // Reset add hover state
+  isMouseOverAdd = false;
+
+  // Check if mouse is over addImage (add.png)
+  if (mouseX > addLeft && mouseX < addRight && mouseY > addTop && mouseY < addBottom) {
+    isMouseOverAdd = true;
+  }
+
+  // Draw addImage (add.png)
+  image(addImage, addX, addY, addWidth, addHeight);
+
+  // Draw addImageHover (add-eyes.png) ONLY if mouse is over addImage
+  if (isMouseOverAdd) {
+    // Apply the new scale factor to make add-eyes.png bigger
+    let hoveredAddWidth = addWidth * addHoverScaleFactor;
+    let hoveredAddHeight = addHeight * addHoverScaleFactor;
+    image(addImageHover, addX, addY, hoveredAddWidth, hoveredAddHeight);
+  }
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  // The info image position (infoX, infoY) is static, so it doesn't need to be recalculated here.
-  // If you wanted it to be responsive (e.g., always in the top-left corner regardless of window size),
-  // you would adjust infoX and infoY based on width/height here.
-}
-
-// The checkOverlap function is commented out as it's no longer used.
-/*
-function checkOverlap(r1, r2) {
-  return !(r1.right < r2.left ||
-    r1.left > r2.right ||
-    r1.bottom < r2.top ||
-    r1.top > r2.bottom);
+  // The info image and add image positions (infoX, infoY, addX, addY) are static.
+  // If you wanted them to be responsive (e.g., always in a certain corner),
+  // you would adjust their X and Y based on width/height here.
 }
