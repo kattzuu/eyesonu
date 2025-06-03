@@ -18,7 +18,7 @@ let trumpScale = 0.19; // Scale for the Trump button
 let infoImageScale = 0.2; // Scale for the info image (adjust as needed)
 let addImageScale = 0.2; // NEW: Scale for the add image (adjust as needed)
 let infoHoverScaleFactor = 3; // NEW: Factor to make info2.png bigger when hovered (e.g., 1.2 for 20% bigger)
-let addHoverScaleFactor = 3; // NEW: Factor to make add-eyes.png bigger when hovered
+let addHoverScaleFactor = 2; // NEW: Factor to make add-eyes.png bigger when hovered
 
 
 // Define spacing between buttons
@@ -74,7 +74,7 @@ function setup() {
 
   // NEW: Set static position for addImage (add.png)
   // You can adjust these coordinates as needed
-  addX = 1300; // Example position, adjust as desired
+  addX = 1370; // Example position, adjust as desired
   addY = 300; // Example position, adjust as desired
 
   // Change cursor to a pointer when it's over interactive elements
