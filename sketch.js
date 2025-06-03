@@ -74,8 +74,8 @@ function setup() {
 
   // NEW: Set static position for addImage (add.png)
   // You can adjust these coordinates as needed
-  addX = 1000; // Example position, adjust as desired
-  addY = 100; // Example position, adjust as desired
+  addX = 1500; // Example position, adjust as desired
+  addY = 300; // Example position, adjust as desired
 
   // Change cursor to a pointer when it's over interactive elements
   cursor(HAND);
@@ -185,7 +185,7 @@ function draw() {
   // Check for click on Trump button
   if (mouseIsPressed && mouseX > trumpLeft && mouseX < trumpRight && mouseY > trumpTop && mouseY < trumpBottom) {
     // Open link in a new tab
-    window.open('<iframe src="https://editor.p5js.org/katzu/full/OpuITk5qy"></iframe>');
+    window.open('https://editor.p5js.org/katzu/full/OpuITk5qy');
   }
 
   // Add click detection for OJ button
