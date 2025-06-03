@@ -7,9 +7,9 @@ let OJButton; // The OJ button image
 let trumpButton; // The Trump button image
 
 
-let numImages = 200; // Number of googly eye pairs
+let numImages = 250; // Number of googly eye pairs
 let maxDistance = 20; // Maximum movement distance for the eyeball
-let imageScale = 0.2; // Smaller scale for the googly eyes
+let imageScale = 0.3; // Smaller scale for the googly eyes
 let maggieScale = 0.19; // Scale for the Maggie image
 let OJScale = 0.19; // Scale for the OJ image
 let trumpScale = 0.19; // Scale for the Trump button
@@ -178,6 +178,13 @@ function draw() {
     // Open link in a new tab
     window.open('https://editor.p5js.org/katzu/full/Kde_Jdh67', '_blank');
   }
+
+  // --- ADDED: Click detection for Maggie button ---
+  if (mouseIsPressed && mouseX > maggieLeft && mouseX < maggieRight && mouseY > maggieTop && mouseY < maggieBottom) {
+    // Open the p5.js editor full-screen link in a new tab
+    window.open('https://editor.p5js.org/katzu/full/TNDR3arfe', '_blank'); 
+  }
+  // --- END ADDED CODE ---
 
   // --- INFO IMAGE HOVER LOGIC ---
   // Calculate the actual dimensions and position of infoImage (INFO1.png)
