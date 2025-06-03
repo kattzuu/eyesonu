@@ -170,7 +170,7 @@ function draw() {
   // Check for click on Trump button
   if (mouseIsPressed && mouseX > trumpLeft && mouseX < trumpRight && mouseY > trumpTop && mouseY < trumpBottom) {
     // Open link in a new tab
-    window.open('https://editor.p5js.org/katzu/full/OpuITk5qy', '_blank');
+    window.open('trump-eyes.html');
   }
 
   // Add click detection for OJ button

@@ -1,0 +1,251 @@
+Last login: Mon Jun  2 21:57:19 on ttys000
+katfrost@Kats-MacBook-Pro-2 ~ % cd /Users/katfrost/Documents/FINAL\ MODULE/OJ\ projection/website 
+katfrost@Kats-MacBook-Pro-2 website % git init
+xcode-select: note: No developer tools were found, requesting install.
+If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.
+See `man xcode-select` for more details.
+katfrost@Kats-MacBook-Pro-2 website % git init
+Initialized empty Git repository in /Users/katfrost/Documents/FINAL MODULE/OJ projection/website/.git/
+katfrost@Kats-MacBook-Pro-2 website % git add .
+katfrost@Kats-MacBook-Pro-2 website % git commit -m "Initial commit of googly eyes project"
+[main (root-commit) 8a13553] Initial commit of googly eyes project
+ Committer: Kat Frost <katfrost@Kats-MacBook-Pro-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 28 files changed, 147468 insertions(+)
+ create mode 100644 INFO1.png
+ create mode 100644 OJ-button-hovver.png
+ create mode 100644 OJ-button2.png
+ create mode 100644 OJ-eyes.png
+ create mode 100644 button-maggie-closed.png
+ create mode 100644 button-maggie.png
+ create mode 100644 eyeballs.png
+ create mode 100644 eyeballs3.png
+ create mode 100644 eyeballs4.png
+ create mode 100644 eyes.png
+ create mode 100644 eyes2.png
+ create mode 100644 eyes3.png
+ create mode 100644 eyes4.png
+ create mode 100644 fullmaggie.png
+ create mode 100644 googly-eye.png
+ create mode 100644 googly-eyeball.png
+ create mode 100644 index.html
+ create mode 100644 info2.png
+ create mode 100644 maggie-button-hovver-1.png
+ create mode 100644 maggie-button-hovver.png
+ create mode 100644 maggie-button2.png
+ create mode 100644 maggie-eyes.png
+ create mode 100644 p5.js
+ create mode 100644 p5.sound.min.js
+ create mode 100644 sketch.js
+ create mode 100644 style.css
+ create mode 100644 trump-button.png
+ create mode 100644 trump-button2.png
+katfrost@Kats-MacBook-Pro-2 website % git remote add origin https://github.com/kattzuu/eyesonu.git
+git branch -M main
+git push -u origin main
+Username for 'https://github.com': kattzuu
+Password for 'https://kattzuu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/kattzuu/eyesonu.git/'
+katfrost@Kats-MacBook-Pro-2 website % git remote add origin https://github.com/kattzuu/eyesonu.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+Username for 'https://github.com': kattzuu 
+Password for 'https://kattzuu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/kattzuu/eyesonu.git/'
+katfrost@Kats-MacBook-Pro-2 website % git remote add origin https://github.com/kattzuu/eyesonu.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+Username for 'https://github.com': kattzuu
+Password for 'https://kattzuu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/kattzuu/eyesonu.git/'
+katfrost@Kats-MacBook-Pro-2 website % git branch -M main
+git push -u origin main
+Username for 'https://github.com': kattzuu
+Password for 'https://kattzuu@github.com': 
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 14 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (29/29), 20.86 MiB | 2.49 MiB/s, done.
+Total 29 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kattzuu/eyesonu.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+katfrost@Kats-MacBook-Pro-2 website % git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+katfrost@Kats-MacBook-Pro-2 website % git add .
+katfrost@Kats-MacBook-Pro-2 website % git commit -m "A short, descriptive message about what you changed"              
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+katfrost@Kats-MacBook-Pro-2 website % git push origin main 
+To https://github.com/kattzuu/eyesonu.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/kattzuu/eyesonu.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+katfrost@Kats-MacBook-Pro-2 website % git pull origin main
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 15 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (15/15), 7.37 KiB | 628.00 KiB/s, done.
+From https://github.com/kattzuu/eyesonu
+ * branch            main       -> FETCH_HEAD
+   8a13553..3297d9d  main       -> origin/main
+Updating 8a13553..3297d9d
+Fast-forward
+ CNAME      |      1 +
+ index.html |     30 +-
+ p5.js      | 147432 +--------------------------------------------------------------
+ 3 files changed, 237 insertions(+), 147226 deletions(-)
+ create mode 100644 CNAME
+katfrost@Kats-MacBook-Pro-2 website % git push origin main
+Everything up-to-date
+katfrost@Kats-MacBook-Pro-2 website % git push origin main
+To https://github.com/kattzuu/eyesonu.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/kattzuu/eyesonu.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+katfrost@Kats-MacBook-Pro-2 website % git pull origin main
+
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 947 bytes | 315.00 KiB/s, done.
+From https://github.com/kattzuu/eyesonu
+ * branch            main       -> FETCH_HEAD
+   3297d9d..0347758  main       -> origin/main
+Updating 3297d9d..0347758
+error: Your local changes to the following files would be overwritten by merge:
+	index.html
+Please commit your changes or stash them before you merge.
+Aborting
+katfrost@Kats-MacBook-Pro-2 website % git push origin main
+To https://github.com/kattzuu/eyesonu.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/kattzuu/eyesonu.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+katfrost@Kats-MacBook-Pro-2 website % git pull origin main
+From https://github.com/kattzuu/eyesonu
+ * branch            main       -> FETCH_HEAD
+Updating 3297d9d..0347758
+error: Your local changes to the following files would be overwritten by merge:
+	index.html
+Please commit your changes or stash them before you merge.
+Aborting
+katfrost@Kats-MacBook-Pro-2 website % git add .
+katfrost@Kats-MacBook-Pro-2 website % git commit -m "Added p5.js boilerplate to index.html"
+[main 2e03e6c] Added p5.js boilerplate to index.html
+ Committer: Kat Frost <katfrost@Kats-MacBook-Pro-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+katfrost@Kats-MacBook-Pro-2 website % git pull origin main
+From https://github.com/kattzuu/eyesonu
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+katfrost@Kats-MacBook-Pro-2 website % git pull origin main --no-rebase
+From https://github.com/kattzuu/eyesonu
+ * branch            main       -> FETCH_HEAD
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+katfrost@Kats-MacBook-Pro-2 website % git add index.html
+katfrost@Kats-MacBook-Pro-2 website % git commit
+hint: Waiting for your editor to close the file... 
+Merge branch 'main' of https://github.com/kattzuu/eyesonu
+
+# Conflicts:
+#       index.html
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please run
+#       git update-ref -d MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Kat Frost <katfrost@Kats-MacBook-Pro-2.local>
+#
+# On branch main
+# Your branch and 'origin/main' have diverged,
+# and have 1 and 1 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#       modified:   index.html
+git commit -m "Resolved merge conflict in index.html and merged remote changes"#
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+~                                                                                    
+
